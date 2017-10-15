@@ -9,7 +9,7 @@ var crystal2 = Math.floor((Math.random() * 12) + 1);
 var crystal3 = Math.floor((Math.random() * 12) + 1);
 var crystal4 = Math.floor((Math.random() * 12) + 1);
 
-function reset() {
+var reset = function() {
 	var yourNumber = 0;
 	var magicNumber = Math.floor((Math.random() * 120) + 19);
 	var crystal1 = Math.floor((Math.random() * 12) + 1);
@@ -28,34 +28,36 @@ $("#losses").text(losses);
 
 $("#crystal-1").on("click", function(){
 	$("#your-number").text(yourNumber += crystal1);
-	checkNumber();
+	checkNumbers();
 	console.log(crystal1)
 });
 
 $("#crystal-2").on("click", function(){
 	$("#your-number").text(yourNumber += crystal2);
-	checkNumber();
+	checkNumbers();
 	console.log(crystal2)
 });
 
 $("#crystal-3").on("click", function(){
 	$("#your-number").text(yourNumber += crystal3);
-	checkNumber();
+	checkNumbers();
 	console.log(crystal3)
 });
 
 $("#crystal-4").on("click", function(){
 	$("#your-number").text(yourNumber += crystal4);
-	checkNumber();
+	checkNumbers();
 	console.log(crystal4)
 });
 
-function checkNumber() {
+function checkNumbers() {
 	if (yourNumber == magicNumber) {
 		$("#win-lose-comment").text("You won!");
 		$("#wins").text(wins + 1);
+		reset();
 	} else if (yourNumber >= magicNumber) {
 		$("#win-lose-comment").text("You lost!");
 		$("#losses").text(losses + 1);
+		reset();
 	};
 };
