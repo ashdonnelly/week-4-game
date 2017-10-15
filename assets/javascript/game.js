@@ -28,32 +28,34 @@ $("#losses").text(losses);
 
 $("#crystal-1").on("click", function(){
 	$("#your-number").text(yourNumber += crystal1);
+	checkNumber();
 	console.log(crystal1)
 });
 
 $("#crystal-2").on("click", function(){
 	$("#your-number").text(yourNumber += crystal2);
+	checkNumber();
 	console.log(crystal2)
 });
 
 $("#crystal-3").on("click", function(){
 	$("#your-number").text(yourNumber += crystal3);
+	checkNumber();
 	console.log(crystal3)
 });
 
 $("#crystal-4").on("click", function(){
 	$("#your-number").text(yourNumber += crystal4);
+	checkNumber();
 	console.log(crystal4)
 });
 
-if (yourNumber === magicNumber) {
-	$("#win-lose-comment").text("You won!");
-	wins++;
-	reset();
-};
-
-if (yourNumber > magicNumber) {
-	$("#win-lose-comment").text("You lost!");
-	losses++;
-	reset();
+function checkNumber() {
+	if (yourNumber == magicNumber) {
+		$("#win-lose-comment").text("You won!");
+		$("#wins").text(wins + 1);
+	} else if (yourNumber >= magicNumber) {
+		$("#win-lose-comment").text("You lost!");
+		$("#losses").text(losses + 1);
+	};
 };
