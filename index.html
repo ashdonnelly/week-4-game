@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="icon" type="image/x-icon" href="assets/images/source-code-icon-32-213242.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Raleway" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -27,10 +28,10 @@
 		<div class="col-md-1"></div>
 
 		<div class="col-md-10" id="instructions">
-			<p>You will be given a Goal Number at the start of the game.</p>
+			<p>You will be given a Magic Number at the start of the game.</p>
 			<p>There are four crystals below. By clicking on a crystal you will add a mystery amount to Your Number.</p>
-			<p>You win by matching Your Number to the Goal Number. You lose if Your Number goes above the Goal Number.</p>
-			<p>Every time the game restarts, the crystal values change.</p>
+			<p>You win by matching Your Number to the Magic Number. You lose if Your Number goes above the Magic Number.</p>
+			<p>Every time the Magic Number resets, the crystal values change.</p>
 		</div>
 
 		<div class="col-md-1"></div>
@@ -38,36 +39,34 @@
 	</div>
 
 	<div class="row">
-		
+
 		<div class="col-md-12" id="crystals">
-			<img id="cystal-1" src="assets/images/diamond.png" alt="red crystal">
-			<img id="cystal-2" src="assets/images/jewels.png" alt="blue sparkling crystal">
-			<img id="cystal-3" src="assets/images/gem.png" alt="orange crystal">
-			<img id="cystal-4" src="assets/images/precious-stone.png" alt="pink sparkling crystal">
+			<img id="crystal-1" src="assets/images/diamond.png" alt="red crystal">
+			<img id="crystal-2" src="assets/images/jewels.png" alt="blue sparkling crystal">
+			<img id="crystal-3" src="assets/images/gem.png" alt="orange crystal">
+			<img id="crystal-4" src="assets/images/precious-stone.png" alt="pink sparkling crystal">
 		</div>
 
 	</div>
 
 	<div class="row" id="numbers-section">
 		
-		<div class="col-md-4">
-			<h2>Goal Number</h2>
-			<h2 id="goal-number"></h2>
+		<div class="col-md-4" id="magic-section">
+			<h2>Magic Number</h2>
+			<h2 id="magic-number"></h2>
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-md-4" id="your-section">
 			<h2>Your Number</h2>
 			<h2 id="your-number"></h2>
-			
 		</div>
 
 		<div class="col-md-4">
 			<p id="win-lose-comment">You can do it!</p>
 			<h3>Wins</h3>
-			<h3 id="wins">0</h3>
+			<h3 id="wins"></h3>
 			<h3>Losses</h3>
-			<h3 id="losses">0</h3>
-			
+			<h3 id="losses"></h3>
 		</div>
 
 	</div>
