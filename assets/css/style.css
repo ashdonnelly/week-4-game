@@ -10,6 +10,7 @@ body
 	padding: 10px;
 	background-color: #effdf5;
 	opacity: 0.7;
+	box-shadow:0 0 20px white;
 }
 
 p {
@@ -20,6 +21,7 @@ p {
 	padding: 10px;
 	background-color: #effdf5;
 	opacity: 0.7;
+	box-shadow:0 0 20px white;
 }
 
 h1 {

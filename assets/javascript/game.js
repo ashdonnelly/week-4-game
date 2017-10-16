@@ -6,10 +6,6 @@ var wins = 0;
 var losses = 0;
 var yourNumber = 0;
 var magicNumber = 0;
-// var crystal1 = Math.floor((Math.random() * 12) + 1);
-// var crystal2 = Math.floor((Math.random() * 12) + 1);
-// var crystal3 = Math.floor((Math.random() * 12) + 1);
-// var crystal4 = Math.floor((Math.random() * 12) + 1);
 
 $("#wins").text(wins);
 $("#losses").text(losses);
@@ -52,13 +48,13 @@ function reset() {
 	});
 
 	function checkNumbers() {
-		if (yourNumber == magicNumber) {
+		if (yourNumber === magicNumber) {
 			$("#win-lose-comment").text("You won!");
 			wins++;
 			reset();
 			yourNumber = 0;
 			console.log("won");
-		} else if (yourNumber > magicNumber) {
+		} else if (yourNumber >= magicNumber) {
 			$("#win-lose-comment").text("You lost!");
 			losses++;
 			reset();
