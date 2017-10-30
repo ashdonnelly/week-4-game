@@ -1,12 +1,10 @@
-body
-{
+body {
 	font-family: 'Berkshire Swash', cursive;
 	text-align: center;
 	background-image: url("../images/congruent_pentagon.png");
 }
 
-#instructions
-{
+#instructions {
 	padding: 10px;
 	background-color: #effdf5;
 	opacity: 0.7;
