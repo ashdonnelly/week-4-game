@@ -1,6 +1,6 @@
-Week 4 Homework
+# Week 4 Homework
 
-Crystal Collector Game
+# Crystal Collector Game
 
 Demonstrate: jQuery basics (on-click events); dynamic html manipulation using jQuery; interactive game creation
 
